@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Non-Negotiables Worksheet — The Power of LIFE</title>
+    <style>
+        @media print {
+            .no-print { display: none; }
+            body { background: white; padding: 0; }
+            .container { box-shadow: none; border-radius: 0; }
+            .page-break { page-break-before: always; }
+            .write-box { min-height: 60px; }
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            padding: 30px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+            overflow: hidden;
+        }
+
+        /* HEADER */
+        .header {
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            color: white;
+            padding: 60px 50px;
+            text-align: center;
+        }
+
+        .premium-badge {
+            background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%);
+            color: #1a365d;
+            padding: 8px 24px;
+            border-radius: 30px;
+            display: inline-block;
+            font-weight: bold;
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 25px;
+        }
+
+        .header h1 {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            line-height: 1.2;
+        }
+
+        .header h1 span {
+            color: #f6ad55;
+        }
+
+        .header .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .header .episode-tag {
+            background: rgba(255,255,255,0.15);
+            padding: 8px 20px;
+            border-radius: 20px;
+            display: inline-block;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        /* VALUE BAR */
+        .value-bar {
+            background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%);
+            padding: 20px 40px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            text-align: center;
+        }
+
+        .value-stat {
+            color: #1a365d;
+        }
+
+        .value-stat strong {
+            display: block;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .value-stat span {
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        /* NAV */
+        .nav-bar {
+            background: #f7fafc;
+            padding: 20px 40px;
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .nav-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            text-decoration: none;
+        }
+
+        .print-btn {
+            background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%);
+            color: #1a365d;
+        }
+
+        /* CONTENT */
+        .content { padding: 50px 50px; }
+
+        .section { margin-bottom: 55px; }
+
+        .section-title {
+            font-size: 26px;
+            color: #1a365d;
+            font-weight: bold;
+            border-left: 6px solid #f6ad55;
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+
+        /* INTRO BOX */
+        .intro-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 35px 40px;
+            border-radius: 15px;
+            margin-bottom: 35px;
+            font-size: 16px;
+            line-height: 1.9;
+        }
+
+        .intro-box .big-quote {
+            font-size: 22px;
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            border-left: 4px solid #f6ad55;
+            padding-left: 20px;
+        }
+
+        /* HOW TO USE */
+        .how-to-box {
+            background: #f7fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 30px 35px;
+            margin-bottom: 35px;
+        }
+
+        .how-to-box h4 {
+            color: #1a365d;
+            font-size: 18px;
+            margin-bottom: 18px;
+            font-weight: bold;
+        }
+
+        .how-steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .how-step {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            border-top: 4px solid #f6ad55;
+        }
+
+        .how-step .step-num {
+            background: #1a365d;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+            margin: 0 auto 12px;
+        }
+
+        .how-step p {
+            font-size: 14px;
+            color: #4a5568;
+            line-height: 1.5;
+        }
+
+        /* DISTINCTION BOX */
+        .distinction-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .distinction-card {
+            padding: 25px;
+            border-radius: 12px;
+            font-size: 15px;
+        }
+
+        .card-value {
+            background: #fff5f5;
+            border: 2px solid #fc8181;
+        }
+
+        .card-value h5 {
+            color: #c53030;
+            font-size: 16px;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+
+        .card-nonneg {
+            background: #e6fffa;
+            border: 2px solid #38b2ac;
+        }
+
+        .card-nonneg h5 {
+            color: #2c7a7b;
+            font-size: 16px;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+
+        .card-value ul, .card-nonneg ul {
+            margin-left: 18px;
+            color: #4a5568;
+            line-height: 1.8;
+        }
+
+        /* WRITE LINES */
+        .write-box {
+            background: #f7fafc;
+            border: 2px dashed #cbd5e0;
+            border-radius: 8px;
+            padding: 18px 20px;
+            min-height: 80px;
+            margin: 12px 0;
+            font-size: 15px;
+            color: #a0aec0;
+            font-style: italic;
+        }
+
+        .write-lines {
+            margin: 12px 0;
+        }
+
+        .write-line {
+            border: none;
+            border-bottom: 2px solid #e2e8f0;
+            display: block;
+            width: 100%;
+            padding: 12px 5px;
+            margin: 8px 0;
+            font-size: 15px;
+            color: #2d3748;
+            background: transparent;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .write-line:focus {
+            outline: none;
+            border-bottom-color: #f6ad55;
+        }
+
+        .write-line::placeholder { color: #cbd5e0; }
+
+        /* STEP CARDS */
+        .step-card {
+            background: white;
+            border-radius: 12px;
+            border-left: 6px solid #667eea;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            padding: 30px 35px;
+            margin: 20px 0;
+        }
+
+        .step-card.gold { border-left-color: #f6ad55; }
+        .step-card.teal { border-left-color: #38b2ac; }
+        .step-card.red { border-left-color: #e53e3e; }
+        .step-card.purple { border-left-color: #764ba2; }
+
+        .step-badge {
+            background: #667eea;
+            color: white;
+            padding: 5px 16px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .step-badge.gold { background: #f6ad55; color: #1a365d; }
+        .step-badge.teal { background: #38b2ac; }
+        .step-badge.red { background: #e53e3e; }
+        .step-badge.purple { background: #764ba2; }
+
+        .step-card h4 {
+            color: #1a365d;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .step-card p {
+            color: #4a5568;
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        /* EXAMPLE BOX */
+        .example-box {
+            background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%);
+            color: #1a365d;
+            padding: 20px 25px;
+            border-radius: 10px;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .example-box strong {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        .example-box ul {
+            margin-left: 18px;
+            line-height: 1.8;
+        }
+
+        /* WHY BOX */
+        .why-box {
+            background: #edf2f7;
+            border-left: 4px solid #667eea;
+            padding: 18px 22px;
+            border-radius: 0 8px 8px 0;
+            margin: 15px 0;
+            font-size: 14px;
+            color: #4a5568;
+        }
+
+        .why-box strong {
+            color: #1a365d;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        /* PRESSURE AUDIT */
+        .pressure-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+
+        .pressure-table th {
+            background: #1a365d;
+            color: white;
+            padding: 14px 16px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .pressure-table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid #e2e8f0;
+            vertical-align: top;
+        }
+
+        .pressure-table tr:nth-child(even) td {
+            background: #f7fafc;
+        }
+
+        .pressure-table .write-cell {
+            border-bottom: 2px solid #e2e8f0;
+            min-height: 40px;
+            padding: 10px 16px;
+        }
+
+        /* NON-NEG BUILDER */
+        .nonneg-builder {
+            background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+            color: white;
+            padding: 35px 40px;
+            border-radius: 15px;
+            margin: 25px 0;
+        }
+
+        .nonneg-builder h4 {
+            font-size: 20px;
+            margin-bottom: 25px;
+            color: #f6ad55;
+        }
+
+        .nonneg-card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 25px 30px;
+            margin: 18px 0;
+            border-left: 4px solid #f6ad55;
+        }
+
+        .nonneg-card .nonneg-number {
+            font-size: 13px;
+            color: #f6ad55;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .nonneg-label {
+            font-size: 13px;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .nonneg-input {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 6px;
+            padding: 12px 15px;
+            width: 100%;
+            color: white;
+            font-size: 15px;
+            margin-bottom: 15px;
+            font-family: 'Segoe UI', sans-serif;
+            min-height: 45px;
+        }
+
+        .nonneg-input::placeholder { color: rgba(255,255,255,0.35); }
+        .nonneg-input:focus { outline: none; border-color: #f6ad55; }
+
+        /* PRESSURE SCENARIO */
+        .scenario-box {
+            background: #fff5f5;
+            border: 2px solid #fc8181;
+            border-radius: 12px;
+            padding: 25px 30px;
+            margin: 18px 0;
+        }
+
+        .scenario-box h5 {
+            color: #c53030;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .scenario-box p {
+            color: #4a5568;
+            font-size: 14px;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        /* COMMITMENT CONTRACT */
+        .contract-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 45px;
+            border-radius: 15px;
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        .contract-box h4 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .contract-box p {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+
+        .contract-field {
+            background: rgba(255,255,255,0.15);
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 10px;
+            padding: 20px 25px;
+            margin: 15px 0;
+            text-align: left;
+        }
+
+        .contract-field label {
+            font-size: 13px;
+            color: rgba(255,255,255,0.7);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .contract-field .field-line {
+            border: none;
+            border-bottom: 2px solid rgba(255,255,255,0.4);
+            background: transparent;
+            width: 100%;
+            padding: 8px 0;
+            color: white;
+            font-size: 16px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .contract-field .field-line::placeholder { color: rgba(255,255,255,0.4); }
+        .contract-field .field-line:focus { outline: none; border-bottom-color: #f6ad55; }
+
+        /* AUDIT SCHEDULE */
+        .audit-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin: 20px 0;
+        }
+
+        .audit-card {
+            background: white;
+            border-radius: 12px;
+            border-top: 5px solid #f6ad55;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            padding: 22px 20px;
+            text-align: center;
+        }
+
+        .audit-card h5 {
+            color: #1a365d;
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .audit-card p {
+            color: #718096;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .audit-card .check-item {
+            text-align: left;
+            font-size: 13px;
+            color: #4a5568;
+            padding: 5px 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .check-box {
+            width: 16px;
+            height: 16px;
+            border: 2px solid #f6ad55;
+            border-radius: 3px;
+            flex-shrink: 0;
+            display: inline-block;
+        }
+
+        /* WARNING + TIP */
+        .tip-box {
+            background: #e6fffa;
+            border-left: 4px solid #38b2ac;
+            padding: 18px 22px;
+            border-radius: 0 8px 8px 0;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .tip-box strong { color: #2c7a7b; display: block; margin-bottom: 6px; }
+
+        .warning-box {
+            background: #fff5f5;
+            border-left: 4px solid #e53e3e;
+            padding: 18px 22px;
+            border-radius: 0 8px 8px 0;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+
+        .warning-box strong { color: #c53030; display: block; margin-bottom: 6px; }
+
+        /* FINAL QUOTE */
+        .final-quote {
+            background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+            color: white;
+            padding: 40px 45px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .final-quote p {
+            font-size: 22px;
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .final-quote .attribution {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #1a365d;
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+            font-size: 13px;
+        }
+
+        .footer a { color: #f6ad55; text-decoration: none; }
+
+        /* DIVIDER */
+        .divider {
+            height: 3px;
+            background: linear-gradient(90deg, #f6ad55, #ed8936);
+            margin: 40px 0;
+            border: none;
+            border-radius: 2px;
+        }
+
+        /* Progress tracker */
+        .progress-bar {
+            background: #e2e8f0;
+            border-radius: 10px;
+            height: 10px;
+            margin: 10px 0 5px;
+            overflow: hidden;
+        }
+        .progress-fill {
+            background: linear-gradient(90deg, #f6ad55, #ed8936);
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 700px) {
+            .content { padding: 30px 25px; }
+            .header { padding: 40px 25px; }
+            .header h1 { font-size: 28px; }
+            .value-bar { grid-template-columns: repeat(2,1fr); }
+            .how-steps { grid-template-columns: 1fr; }
+            .distinction-grid { grid-template-columns: 1fr; }
+            .audit-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- HEADER -->
+    <div class="header">
+        <div class="premium-badge">⭐ Premium Member Resource</div>
+        <h1>The <span>Non-Negotiables</span> Worksheet</h1>
+        <div class="subtitle">Define the lines you will never cross — before pressure makes the decision for you</div>
+        <div class="episode-tag">🎧 Companion to: "The $200 Million Decision" — The Power of LIFE Podcast</div>
+    </div>
+
+    <!-- VALUE BAR -->
+    <div class="value-bar">
+        <div class="value-stat">
+            <strong>6</strong>
+            <span>Deep Work Exercises</span>
+        </div>
+        <div class="value-stat">
+            <strong>4</strong>
+            <span>Sections</span>
+        </div>
+        <div class="value-stat">
+            <strong>3</strong>
+            <span>Non-Negotiables Defined</span>
+        </div>
+        <div class="value-stat">
+            <strong>1</strong>
+            <span>Commitment Contract</span>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <div class="nav-bar no-print">
+        <a class="nav-btn" href="#section1">🔍 Part 1: Discover</a>
+        <a class="nav-btn" href="#section2">⚒️ Part 2: Define</a>
+        <a class="nav-btn" href="#section3">🔥 Part 3: Pressure-Test</a>
+        <a class="nav-btn" href="#section4">📅 Part 4: Protect</a>
+        <button class="nav-btn print-btn" onclick="window.print()">🖨️ Print / Save PDF</button>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <!-- INTRO -->
+        <div class="section">
+            <div class="intro-box">
+                <div class="big-quote">"A value is something you aspire to. A non-negotiable is something you will not compromise — even when it's costly, even when a good reason is given, even when someone more powerful than you is asking."</div>
+                <p>Dario Amodei didn't decide his red lines on the day the Pentagon threatened him. He said: <strong>"We've had them from day one."</strong> That's why he could say no — clearly, calmly, and without hesitation — when $200 million and a presidential threat were on the table.</p>
+                <p style="margin-top: 15px;">This worksheet is designed to give you that same settled clarity. Not rigidity. Not stubbornness. <strong>Settledness.</strong> The kind that comes from having already decided — long before the pressure arrives.</p>
+            </div>
+
+            <div class="how-to-box">
+                <h4>📋 How to Use This Worksheet</h4>
+                <div class="how-steps">
+                    <div class="how-step">
+                        <div class="step-num">1</div>
+                        <p><strong>Set aside 60–90 minutes</strong> in a quiet space. This is not a quick exercise. Give it the space it deserves.</p>
+                    </div>
+                    <div class="how-step">
+                        <div class="step-num">2</div>
+                        <p><strong>Work through all four parts in order.</strong> Each section builds on the last. Don't skip ahead.</p>
+                    </div>
+                    <div class="how-step">
+                        <div class="step-num">3</div>
+                        <p><strong>Share your answers</strong> with one trusted person when done. Spoken commitments hold stronger than private ones.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- PART 1: DISCOVER -->
+        <div class="section page-break" id="section1">
+            <div class="section-title">🔍 Part 1: Discover Your Non-Negotiables</div>
+            <p style="margin-bottom: 25px; font-size: 16px; color: #4a5568;">Before you can define your non-negotiables, you need to find them. They already exist inside you — this section helps you surface them through four targeted exercises.</p>
+
+            <!-- Exercise 1 -->
+            <div class="step-card purple">
+                <div class="step-badge purple">Exercise 1 of 4</div>
+                <h4>The Violation Test — What Has Already Crossed a Line?</h4>
+                <p>The clearest signal of a non-negotiable is a time when someone or something crossed a line and you felt it viscerally — even if you didn't act on it. Betrayal, resentment, and deep discomfort are data points. They tell you what you actually value, not just what you say you value.</p>
+
+                <div class="why-box">
+                    <strong>🧠 Why This Works:</strong>
+                    Your strongest non-negotiables are usually already proven by experience. You've already felt them being violated. This exercise helps you name what you've been feeling without clear language.
+                </div>
+
+                <p style="margin-top: 18px; font-weight: bold; color: #1a365d;">Think of 3 moments when you felt deeply compromised, resentful, or like you'd betrayed yourself. What happened?</p>
+
+                <div class="write-lines">
+                    <input class="write-line" type="text" placeholder="Situation 1: What happened? How did it feel? What line was crossed?">
+                    <input class="write-line" type="text" placeholder="What did this moment reveal about what you will not tolerate?">
+                    <input class="write-line" type="text" placeholder="Situation 2: What happened? How did it feel? What line was crossed?">
+                    <input class="write-line" type="text" placeholder="What did this moment reveal about what you will not tolerate?">
+                    <input class="write-line" type="text" placeholder="Situation 3: What happened? How did it feel? What line was crossed?">
+                    <input class="write-line" type="text" placeholder="What did this moment reveal about what you will not tolerate?">
+                </div>
+
+                <div class="example-box">
+                    <strong>💡 Examples to Prompt Your Thinking:</strong>
+                    <ul>
+                        <li>You stayed quiet in a meeting when someone took credit for your work — and resented yourself for it</li>
+                        <li>You took on a client you knew wasn't right and it drained you for months</li>
+                        <li>You said yes to something that required you to be dishonest — and it kept you up at night</li>
+                        <li>You stayed in a role/relationship longer than you should have because leaving felt too costly</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Exercise 2 -->
+            <div class="step-card teal">
+                <div class="step-badge teal">Exercise 2 of 4</div>
+                <h4>The Deathbed Test — What Would You Regret?</h4>
+                <p>This exercise is uncomfortable by design. It cuts through the noise of daily life and forces clarity about what actually matters. Answer honestly — not aspirationally.</p>
+
+                <div class="why-box">
+                    <strong>🧠 Why This Works:</strong>
+                    Bronnie Ware, a palliative care nurse who documented the regrets of dying patients, found the most common regret was: "I wish I'd had the courage to live a life true to myself, not the life others expected of me." This exercise surfaces the version of you that already knows what matters most.
+                </div>
+
+                <p style="margin-top: 18px; font-weight: bold; color: #1a365d;">Imagine you are 90 years old, looking back at your life. Answer these questions:</p>
+
+                <div class="write-lines">
+                    <p style="font-size: 14px; color: #718096; margin-bottom: 5px; margin-top: 15px;">What would you regret compromising most — in your career?</p>
+                    <input class="write-line" type="text" placeholder="Write your honest answer here...">
+
+                    <p style="font-size: 14px; color: #718096; margin-bottom: 5px; margin-top: 15px;">What would you regret compromising most — in your relationships?</p>
+                    <input class="write-line" type="text" placeholder="Write your honest answer here...">
+
+                    <p style="font-size: 14px; color: #718096; margin-bottom: 5px; margin-top: 15px;">What would you regret compromising most — about who you were as a person?</p>
+                    <input class="write-line" type="text" placeholder="Write your honest answer here...">
+
+                    <p style="font-size: 14px; color: #718096; margin-bottom: 5px; margin-top: 15px;">What one thing, if you protected it throughout your life, would make you feel you lived in full expression?</p>
+                    <input class="write-line" type="text" placeholder="Write your honest answer here...">
+                </div>
+            </div>
+
+            <!-- Exercise 3 -->
+            <div class="step-card gold">
+                <div class="step-badge gold">Exercise 3 of 4</div>
+                <h4>The Admiration Test — What Do You Respect Most in Others?</h4>
+                <p>The qualities you most admire in others are often the qualities you most want to embody yourself — and the ones you're most committed to not betraying. This is a fast but revealing exercise.</p>
+
+                <p style="margin-top: 18px; font-weight: bold; color: #1a365d;">Think of 3 people you deeply admire — in business, history, or your personal life. What is the ONE quality in each that you admire most?</p>
+
+                <div class="write-lines">
+                    <input class="write-line" type="text" placeholder="Person 1: Name — The quality I admire most is...">
+                    <input class="write-line" type="text" placeholder="Person 2: Name — The quality I admire most is...">
+                    <input class="write-line" type="text" placeholder="Person 3: Name — The quality I admire most is...">
+                </div>
+
+                <p style="margin-top: 20px; font-weight: bold; color: #1a365d;">Look at the three qualities you wrote. What do they have in common? What does that tell you about what you're committed to not compromising?</p>
+                <div class="write-lines">
+                    <input class="write-line" type="text" placeholder="The pattern I notice is...">
+                    <input class="write-line" type="text" placeholder="This tells me that one of my non-negotiables is probably...">
+                </div>
+            </div>
+
+            <!-- Exercise 4 -->
+            <div class="step-card red">
+                <div class="step-badge red">Exercise 4 of 4</div>
+                <h4>The Pressure Audit — Where Are You Currently Being Tested?</h4>
+                <p>Non-negotiables don't only matter in hypothetical situations. Somewhere in your life right now, a value is being tested. This exercise helps you see it clearly — before the slow compromise becomes permanent.</p>
+
+                <div class="warning-box">
+                    <strong>⚠️ Important:</strong>
+                    Most people have been slowly compromising on something they told themselves was non-negotiable. The slow drift is harder to see than the dramatic test. This exercise is designed to surface it.
+                </div>
+
+                <p style="margin-top: 18px; font-weight: bold; color: #1a365d;">Complete the table below honestly. Check every area of your life:</p>
+
+                <table class="pressure-table">
+                    <thead>
+                        <tr>
+                            <th>Life Area</th>
+                            <th>What I Said I'd Never Do / Accept</th>
+                            <th>Am I Currently Doing / Accepting It?</th>
+                            <th>What's the Drift Costing Me?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Career / Business</strong></td>
+                            <td class="write-cell"><input class="write-line" type="text" placeholder="e.g. Work with clients who don't respect me"></td>
+                            <td class="write-cell"><input class="write-line" type="text" placeholder="Yes / No / Partially"></td>
+                            <td class="write-cell"><input class="write-line" type="text" placeholder="e.g. Resentment, energy drain"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Relationships</strong></td>
+                            <td class="write-cell"><input class="write-line" type="text" placeholder="e.g. Stay in relationships without mutual respect"></td>
+                            <td class="write-cell"><input class="write-line" type="text" placeholder="Yes / No / Partially"></td>
+                            <td class="write-cell"><input class="write-line" type="text" placeholder="e.g. Self-worth erosion"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Health</strong></td>
+                            <td class="write-cell"><input class="write-line" type="text" placeholder="e.g. Sacrifice sleep or health for work"></td>
+                            <td class="write-cell"><input class="write-line" type="text" placeholder="Yes / No / Partially"></td>
+                            <td class="write-cell"><input class="write-line" type="text" placeholder="e.g. Burnout, poor performance"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Finances</strong></td>
+                            <td class="write-cell"><input class="write-line" type="text" placeholder="e.g. Go into debt for lifestyle"></td>
+                            <td class="write-cell"><input class="write-line" type="text" placeholder="Yes / No / Partially"></td>
+                            <td class="write-cell"><input class="write-line" type="text" placeholder="e.g. Financial anxiety"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Personal Integrity</strong></td>
+                            <td class="write-cell"><input class="write-line" type="text" placeholder="e.g. Be dishonest to make others comfortable"></td>
+                            <td class="write-cell"><input class="write-line" type="text" placeholder="Yes / No / Partially"></td>
+                            <td class="write-cell"><input class="write-line" type="text" placeholder="e.g. Loss of self-trust"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Time / Freedom</strong></td>
+                            <td class="write-cell"><input class="write-line" type="text" placeholder="e.g. Let others control my schedule and priorities"></td>
+                            <td class="write-cell"><input class="write-line" type="text" placeholder="Yes / No / Partially"></td>
+                            <td class="write-cell"><input class="write-line" type="text" placeholder="e.g. Resentment, exhaustion"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="tip-box">
+                    <strong>💡 The Slow Drift Principle:</strong>
+                    Most integrity failures aren't dramatic betrayals. They're micro-compromises that compound over time — each one feeling reasonable in isolation, until one day you look up and realise you're someone you don't fully recognise. This table is designed to catch the drift before it becomes the norm.
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- PART 2: DEFINE -->
+        <div class="section page-break" id="section2">
+            <div class="section-title">⚒️ Part 2: Define Your Three Non-Negotiables</div>
+            <p style="margin-bottom: 25px; font-size: 16px; color: #4a5568;">Using everything you surfaced in Part 1, you're now going to define your three core non-negotiables with precision. Not vague intentions. Specific, named commitments that you can hold yourself to under real pressure.</p>
+
+            <!-- The Distinction -->
+            <div class="step-card">
+                <div class="step-badge">Before You Write</div>
+                <h4>Values vs. Non-Negotiables — Know the Difference</h4>
+                <p>Many people confuse values with non-negotiables. They are related but not the same. Understanding the difference is what makes this exercise powerful.</p>
+
+                <div class="distinction-grid">
+                    <div class="distinction-card card-value">
+                        <h5>⚡ A Value</h5>
+                        <ul>
+                            <li>Something you aspire to</li>
+                            <li>A direction you move toward</li>
+                            <li>Can be imperfectly lived</li>
+                            <li>Guides your decisions</li>
+                            <li>Example: "I value honesty"</li>
+                        </ul>
+                    </div>
+                    <div class="distinction-card card-nonneg">
+                        <h5>🛡️ A Non-Negotiable</h5>
+                        <ul>
+                            <li>A line you will not cross</li>
+                            <li>Binary — you either hold it or you don't</li>
+                            <li>Has a real cost when violated</li>
+                            <li>Applies even when it's expensive</li>
+                            <li>Example: "I will not mislead a client to close a sale — even if I lose the deal"</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tip-box" style="margin-top: 20px;">
+                    <strong>💡 The Formula:</strong>
+                    A strong non-negotiable follows this structure: <em>"I will not [specific action] — even if [the most likely pressure you'd face]."</em> The "even if" is what makes it real. Without it, it's just a preference.
+                </div>
+            </div>
+
+            <!-- The Builder -->
+            <div class="nonneg-builder">
+                <h4>🛡️ Your Three Non-Negotiables</h4>
+
+                <div class="nonneg-card">
+                    <div class="nonneg-number">Non-Negotiable #1</div>
+
+                    <span class="nonneg-label">The Domain (career, relationships, health, integrity, finances, time):</span>
+                    <input class="nonneg-input" type="text" placeholder="e.g. Business Integrity">
+
+                    <span class="nonneg-label">The specific line I will not cross:</span>
+                    <input class="nonneg-input" type="text" placeholder="e.g. I will not mislead a client or prospect to close a sale...">
+
+                    <span class="nonneg-label">Even if... (name the most likely pressure):</span>
+                    <input class="nonneg-input" type="text" placeholder="e.g. ...even if it means losing the contract or disappointing someone I respect.">
+
+                    <span class="nonneg-label">Why this one is non-negotiable for me (connect it to your identity):</span>
+                    <input class="nonneg-input" type="text" placeholder="e.g. Because my reputation and self-trust are worth more than any single deal. Once I mislead, I become someone who misleads.">
+                </div>
+
+                <div class="nonneg-card">
+                    <div class="nonneg-number">Non-Negotiable #2</div>
+
+                    <span class="nonneg-label">The Domain:</span>
+                    <input class="nonneg-input" type="text" placeholder="e.g. Health & Energy">
+
+                    <span class="nonneg-label">The specific line I will not cross:</span>
+                    <input class="nonneg-input" type="text" placeholder="e.g. I will not sacrifice my health protocols (sleep, exercise, recovery) for work demands...">
+
+                    <span class="nonneg-label">Even if...:</span>
+                    <input class="nonneg-input" type="text" placeholder="e.g. ...even if there's a deadline, a client emergency, or a big opportunity requiring me to override them.">
+
+                    <span class="nonneg-label">Why this one is non-negotiable for me:</span>
+                    <input class="nonneg-input" type="text" placeholder="e.g. Because I cannot lead, create, or serve at the level I'm committed to if I'm operating from a depleted body and mind.">
+                </div>
+
+                <div class="nonneg-card">
+                    <div class="nonneg-number">Non-Negotiable #3</div>
+
+                    <span class="nonneg-label">The Domain:</span>
+                    <input class="nonneg-input" type="text" placeholder="e.g. Personal Freedom / Time">
+
+                    <span class="nonneg-label">The specific line I will not cross:</span>
+                    <input class="nonneg-input" type="text" placeholder="e.g. I will not accept a role, partnership, or commitment that requires me to be someone other than who I am...">
+
+                    <span class="nonneg-label">Even if...:</span>
+                    <input class="nonneg-input" type="text" placeholder="e.g. ...even if the money is exceptional or the status is appealing.">
+
+                    <span class="nonneg-label">Why this one is non-negotiable for me:</span>
+                    <input class="nonneg-input" type="text" placeholder="e.g. Because living in full expression requires me to show up whole — not as a performance of someone else's expectations.">
+                </div>
+            </div>
+
+            <!-- Sharpening -->
+            <div class="step-card gold">
+                <div class="step-badge gold">Sharpen Your Language</div>
+                <h4>The Specificity Test — Are Your Non-Negotiables Clear Enough?</h4>
+                <p>A non-negotiable that is too vague will fail under pressure because you'll be able to argue yourself around it. Run each of your three through this test:</p>
+
+                <table class="pressure-table" style="margin-top: 20px;">
+                    <thead>
+                        <tr>
+                            <th>Test Question</th>
+                            <th>Non-Neg #1</th>
+                            <th>Non-Neg #2</th>
+                            <th>Non-Neg #3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Could I explain this to someone in one sentence?</td>
+                            <td><input class="write-line" type="text" placeholder="Yes / No / Needs work"></td>
+                            <td><input class="write-line" type="text" placeholder="Yes / No / Needs work"></td>
+                            <td><input class="write-line" type="text" placeholder="Yes / No / Needs work"></td>
+                        </tr>
+                        <tr>
+                            <td>Would I know immediately if I crossed it?</td>
+                            <td><input class="write-line" type="text" placeholder="Yes / No / Needs work"></td>
+                            <td><input class="write-line" type="text" placeholder="Yes / No / Needs work"></td>
+                            <td><input class="write-line" type="text" placeholder="Yes / No / Needs work"></td>
+                        </tr>
+                        <tr>
+                            <td>Does it have an "even if" — a named pressure scenario?</td>
+                            <td><input class="write-line" type="text" placeholder="Yes / No / Needs work"></td>
+                            <td><input class="write-line" type="text" placeholder="Yes / No / Needs work"></td>
+                            <td><input class="write-line" type="text" placeholder="Yes / No / Needs work"></td>
+                        </tr>
+                        <tr>
+                            <td>Does it connect to who I want to be, not just what I want to avoid?</td>
+                            <td><input class="write-line" type="text" placeholder="Yes / No / Needs work"></td>
+                            <td><input class="write-line" type="text" placeholder="Yes / No / Needs work"></td>
+                            <td><input class="write-line" type="text" placeholder="Yes / No / Needs work"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="warning-box" style="margin-top: 20px;">
+                    <strong>⚠️ If you answered "Needs work" to more than one question for any non-negotiable:</strong>
+                    Go back and rewrite it. A vague non-negotiable is not a non-negotiable — it's a good intention. Good intentions bend. Precise commitments hold.
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- PART 3: PRESSURE-TEST -->
+        <div class="section page-break" id="section3">
+            <div class="section-title">🔥 Part 3: Pressure-Test Your Non-Negotiables</div>
+            <p style="margin-bottom: 25px; font-size: 16px; color: #4a5568;">Defining your non-negotiables on paper is the first step. The second step is rehearsing them under simulated pressure — so when real pressure comes, the decision is already made. This is the section most people skip. Don't skip it.</p>
+
+            <div class="step-card red">
+                <div class="step-badge red">Pressure Scenario 1</div>
+                <h4>The Money Test</h4>
+
+                <div class="scenario-box">
+                    <h5>🎯 The Scenario:</h5>
+                    <p>Someone offers you significantly more money — a client, an employer, a partner — and the only condition is that you cross one of your three non-negotiables. The opportunity is real. The person asking is credible. The timing is ideal. You need the money.</p>
+                </div>
+
+                <p style="font-weight: bold; color: #1a365d; margin-bottom: 10px;">Which of your three non-negotiables is most at risk in this scenario?</p>
+                <input class="write-line" type="text" placeholder="Name it specifically...">
+
+                <p style="font-weight: bold; color: #1a365d; margin-top: 18px; margin-bottom: 10px;">What will you say? Write your exact response — not the concept, the actual words:</p>
+                <div class="write-box">Write your response here as if the conversation is happening right now. Be specific. What do you say to them?</div>
+
+                <p style="font-weight: bold; color: #1a365d; margin-top: 18px; margin-bottom: 10px;">What is the real cost of saying yes? (Go beyond the obvious — what does it do to your identity, your trust in yourself, your long-term reputation?)</p>
+                <input class="write-line" type="text" placeholder="The cost of crossing this line is...">
+
+                <div class="tip-box" style="margin-top: 15px;">
+                    <strong>💡 Remember:</strong>
+                    Anthropic lost $200M. Within days the market rewarded their refusal with a #1 app store ranking and an explosion in trust. The short-term cost of holding the line is almost always smaller than the long-term cost of losing your integrity.
+                </div>
+            </div>
+
+            <div class="step-card purple">
+                <div class="step-badge purple">Pressure Scenario 2</div>
+                <h4>The Authority Test</h4>
+
+                <div class="scenario-box">
+                    <h5>🎯 The Scenario:</h5>
+                    <p>Someone with significant authority over you — a senior partner, a major client, a boss, an investor — asks you to do something that crosses one of your non-negotiables. They are not being malicious. They believe they have a good reason. But it would require you to compromise.</p>
+                </div>
+
+                <p style="font-weight: bold; color: #1a365d; margin-bottom: 10px;">Walk through your response step by step — what do you do first, second, third?</p>
+                <div class="write-lines">
+                    <input class="write-line" type="text" placeholder="First, I would...">
+                    <input class="write-line" type="text" placeholder="Then, I would...">
+                    <input class="write-line" type="text" placeholder="If they persist, I would...">
+                    <input class="write-line" type="text" placeholder="My final position is...">
+                </div>
+
+                <p style="font-weight: bold; color: #1a365d; margin-top: 18px; margin-bottom: 10px;">What is the story you'll tell yourself in the moment to justify crossing the line — and how will you counter it?</p>
+                <div class="write-lines">
+                    <input class="write-line" type="text" placeholder="The justification I'll likely hear in my head: 'I should do this because...'">
+                    <input class="write-line" type="text" placeholder="My counter to that justification: 'The truth is...'">
+                </div>
+            </div>
+
+            <div class="step-card teal">
+                <div class="step-badge teal">Pressure Scenario 3</div>
+                <h4>The Gradual Erosion Test</h4>
+
+                <div class="scenario-box">
+                    <h5>🎯 The Scenario:</h5>
+                    <p>Nobody asks you to cross a line dramatically. Instead, over six months, you make a series of small concessions — each one feeling reasonable, each one slightly further from your non-negotiable. Before you know it, you've drifted so far you don't recognise where you are.</p>
+                </div>
+
+                <p style="font-weight: bold; color: #1a365d; margin-bottom: 10px;">Describe what gradual erosion might look like for each of your three non-negotiables. What are the small steps that could lead to crossing the line?</p>
+                <div class="write-lines">
+                    <input class="write-line" type="text" placeholder="For Non-Neg #1, the gradual erosion would start with...">
+                    <input class="write-line" type="text" placeholder="For Non-Neg #2, the gradual erosion would start with...">
+                    <input class="write-line" type="text" placeholder="For Non-Neg #3, the gradual erosion would start with...">
+                </div>
+
+                <p style="font-weight: bold; color: #1a365d; margin-top: 18px; margin-bottom: 10px;">What is your early warning signal for each one — the moment you'll know the drift has begun?</p>
+                <div class="write-lines">
+                    <input class="write-line" type="text" placeholder="Early warning signal for Non-Neg #1:">
+                    <input class="write-line" type="text" placeholder="Early warning signal for Non-Neg #2:">
+                    <input class="write-line" type="text" placeholder="Early warning signal for Non-Neg #3:">
+                </div>
+
+                <div class="warning-box" style="margin-top: 15px;">
+                    <strong>⚠️ The Gradual Erosion Principle:</strong>
+                    Most integrity failures are not dramatic betrayals — they are sequences of small, "reasonable" compromises. The early warning signal you just wrote is your most important protection. When you feel it, treat it like an alarm. Stop. Reassess. Recommit.
+                </div>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <!-- PART 4: PROTECT -->
+        <div class="section page-break" id="section4">
+            <div class="section-title">📅 Part 4: Protect Your Non-Negotiables Long-Term</div>
+            <p style="margin-bottom: 25px; font-size: 16px; color: #4a5568;">Deciding your non-negotiables once is not enough. Life changes. Pressure evolves. New temptations emerge. This section gives you the ongoing structure to keep your commitments alive — not as a document you filed away, but as a living part of how you operate.</p>
+
+            <!-- The Commitment Contract -->
+            <div class="contract-box">
+                <h4>📜 Your Non-Negotiables Commitment Contract</h4>
+                <p>This is not a motivational exercise. This is a written record of who you have decided to be. Sign it. Date it. Keep it somewhere visible.</p>
+
+                <div class="contract-field">
+                    <label>My Non-Negotiable #1 (in full):</label>
+                    <input class="field-line" type="text" placeholder="Write it here exactly as you defined it in Part 2...">
+                </div>
+
+                <div class="contract-field">
+                    <label>My Non-Negotiable #2 (in full):</label>
+                    <input class="field-line" type="text" placeholder="Write it here exactly as you defined it in Part 2...">
+                </div>
+
+                <div class="contract-field">
+                    <label>My Non-Negotiable #3 (in full):</label>
+                    <input class="field-line" type="text" placeholder="Write it here exactly as you defined it in Part 2...">
+                </div>
+
+                <div class="contract-field">
+                    <label>I am committing to these because:</label>
+                    <input class="field-line" type="text" placeholder="Write the deeper reason — your mission, your identity, who you are becoming...">
+                </div>
+
+                <div class="contract-field">
+                    <label>The person I am sharing these with (accountability partner):</label>
+                    <input class="field-line" type="text" placeholder="Name and date you will share this with them...">
+                </div>
+
+                <div class="contract-field">
+                    <label>My Name:</label>
+                    <input class="field-line" type="text" placeholder="Sign here...">
+                </div>
+
+                <div class="contract-field">
+                    <label>Date:</label>
+                    <input class="field-line" type="text" placeholder="Today's date...">
+                </div>
+            </div>
+
+            <!-- Audit Schedule -->
+            <div class="step-card gold">
+                <div class="step-badge gold">Your Ongoing Audit Schedule</div>
+                <h4>How to Keep Your Non-Negotiables Alive</h4>
+                <p>Your non-negotiables need a review rhythm. Not because they'll change drastically — but because life will gradually test them without announcing itself. Build this into your calendar today.</p>
+
+                <div class="audit-grid">
+                    <div class="audit-card">
+                        <h5>🗓️ Monthly Check-In</h5>
+                        <p>15 minutes. Ask yourself three questions:</p>
+                        <div class="check-item"><span class="check-box"></span> Have I held all three this month?</div>
+                        <div class="check-item"><span class="check-box"></span> Was there a moment I came close to crossing a line?</div>
+                        <div class="check-item"><span class="check-box"></span> What made it hard — and what held me?</div>
+                    </div>
+                    <div class="audit-card">
+                        <h5>📆 Quarterly Deep Review</h5>
+                        <p>45 minutes. Revisit the full worksheet:</p>
+                        <div class="check-item"><span class="check-box"></span> Have any new pressure patterns emerged?</div>
+                        <div class="check-item"><span class="check-box"></span> Do my non-negotiables still reflect who I'm becoming?</div>
+                        <div class="check-item"><span class="check-box"></span> Do I need to add or sharpen any?</div>
+                    </div>
+                    <div class="audit-card">
+                        <h5>📅 Annual Recommitment</h5>
+                        <p>90 minutes. Full reset:</p>
+                        <div class="check-item"><span class="check-box"></span> Re-do the Violation and Deathbed tests</div>
+                        <div class="check-item"><span class="check-box"></span> Rewrite and re-sign the Commitment Contract</div>
+                        <div class="check-item"><span class="check-box"></span> Share updated non-negotiables with your accountability partner</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Sharing Protocol -->
+            <div class="step-card teal">
+                <div class="step-badge teal">The Accountability Protocol</div>
+                <h4>How to Share Your Non-Negotiables With Someone You Trust</h4>
+                <p>Spoken commitments hold stronger than private ones. This is not optional — it is part of the process. Here is exactly how to do it.</p>
+
+                <div class="example-box">
+                    <strong>📝 Script for Sharing With Your Accountability Partner:</strong>
+                    <ul>
+                        <li style="margin-bottom: 8px;">"I've been doing some deep work on my non-negotiables — the lines I've committed not to cross in my life and work. I'd like to share them with you, not for feedback, but to make them real by saying them out loud to someone I trust."</li>
+                        <li style="margin-bottom: 8px;">"My three are: [state each one clearly with the 'even if' clause]."</li>
+                        <li style="margin-bottom: 8px;">"I'm asking you to check in with me on these once a quarter. You don't need to hold me accountable — I'll hold myself accountable. I just need you to know what I've committed to."</li>
+                    </ul>
+                </div>
+
+                <p style="margin-top: 20px; font-weight: bold; color: #1a365d;">Who are you sharing this with? Name them and set a date — right now, before you close this worksheet:</p>
+                <div class="write-lines">
+                    <input class="write-line" type="text" placeholder="I will share my non-negotiables with: (name)...">
+                    <input class="write-line" type="text" placeholder="I will do this by: (specific date)...">
+                    <input class="write-line" type="text" placeholder="The medium I'll use (call, coffee, voice note): ...">
+                </div>
+            </div>
+
+            <!-- Final Reflection -->
+            <div class="step-card">
+                <div class="step-badge">Final Reflection</div>
+                <h4>The Full Expression Question</h4>
+                <p>Before you close this worksheet, answer this one final question. Take your time with it.</p>
+
+                <p style="margin-top: 20px; font-size: 18px; font-weight: bold; color: #1a365d; font-style: italic;">If you held your three non-negotiables for the next 10 years — without exception, regardless of the pressure — who would you become? What would your life look like?</p>
+
+                <div class="write-box" style="min-height: 120px;">Write your answer here. Be honest and specific. This is your north star — the version of you that held the line.</div>
+            </div>
+        </div>
+
+        <!-- FINAL QUOTE -->
+        <div class="final-quote">
+            <p>"Your values are only real when they've been tested. Decide them now — while the stakes are low and the thinking is clear — so that when pressure comes, the decision is already made."</p>
+            <p class="attribution">— The Power of LIFE Podcast | Living In Full Expression</p>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p style="font-size: 16px; font-weight: bold; margin-bottom: 10px;">The Power of LIFE Podcast</p>
+        <p style="opacity: 0.8; margin-bottom: 15px;">Living In Full Expression</p>
+        <p><a href="#">🎧 Podcast</a> &nbsp;|&nbsp; <a href="#">📸 Instagram</a> &nbsp;|&nbsp; <a href="#">💼 LinkedIn</a> &nbsp;|&nbsp; <a href="#">📘 Facebook</a></p>
+        <p style="margin-top: 15px; opacity: 0.6; font-size: 12px;">Premium Member Resource — The $200 Million Decision Episode &nbsp;|&nbsp; Not for redistribution</p>
+    </div>
+
+</div>
+</body>
+</html>
